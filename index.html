@@ -30,25 +30,85 @@
 		p {
 			margin-bottom: 20px;
 		}
-	</style>
+        .custom-cursor {
+            position: absolute;
+            z-index: 1000;
+            pointer-events: none;
+        }
+        .custom-cursor img {
+            width: 30px;
+            height: auto;
+        }
+        .custom-cursor img:hover {
+            transform: scale(1.2);
+        }
+        .transparent-box {
+            background-color: rgba(255,255,255,0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .transparent-box:hover {
+            background-color: rgba(255,255,255,0.5);
+        }
+        .material-you {
+            background-color:#6200EE; 
+            color:white; 
+            padding-top:50px; 
+            padding-bottom:50px; 
+            text-align:center; 
+            font-size:30px; 
+            font-weight:bold; 
+            border-radius:10px; 
+            margin-bottom:20px; 
+            box-shadow:-5px -5px 10px rgba(255,255,255,.05),5px 5px 15px rgba(0,0,0,.5);
+        }
+        .material-you:hover {
+            background-color:#3700B3; 
+        }
+    </style>
 </head>
 <body>
-	<h1>My Links</h1>
-	
-	<h2>YouTube</h2>
-	<p><a href="https://www.youtube.com/">https://www.youtube.com/</a></p>
+    <div class="custom-cursor">
+        <img src="https://i.imgur.com/8zvJh7d.png" alt="Custom cursor">
+    </div>
 
-	<h2>SoundCloud</h2>
-	<p><a href="https://soundcloud.com/">https://soundcloud.com/</a></p>
+    <h1>My Links</h1>
 
-	<h2>Reddit</h2>
-	<p><a href="https://www.reddit.com/">https://www.reddit.com/</a></p>
+    <div class="transparent-box">
+        <h2>YouTube</h2>
+        <p><a href="https://www.youtube.com/">https://www.youtube.com/</a></p>
+    </div>
 
-	<h2>Instagram</h2>
-	<p><a href="https://www.instagram.com/">https://www.instagram.com/</a></p>
+    <div class="transparent-box">
+        <h2>SoundCloud</h2>
+        <p><a href="https://soundcloud.com/">https://soundcloud.com/</a></p>
+    </div>
 
-	<h2>Twitter</h2>
-	<p><a href="https://twitter.com/">https://twitter.com/</a></p>
+    <div class="transparent-box">
+        <h2>Reddit</h2>
+        <p><a href="https://www.reddit.com/">https://www.reddit.com/</a></p>
+    </div>
+
+    <div class="transparent-box">
+        <h2>Instagram</h2>
+        <p><a href="https://www.instagram.com/">https://www.instagram.com/</a></p>
+    </div>
+
+    <div class="transparent-box">
+        <h2>Twitter</h2>
+        <p><a href="https://twitter.com/">https://twitter.com/</a></p>
+    </div>
+
+    <div class="material-you">Material You inspired design!</div>
+
+    <script type="text/javascript">
+      document.addEventListener("mousemove", function(e) {
+          var customCursor = document.querySelector(".custom-cursor");
+          customCursor.style.left = e.clientX + "px";
+          customCursor.style.top = e.clientY + "px";
+      });
+    </script>
 
 </body>
 </html>
