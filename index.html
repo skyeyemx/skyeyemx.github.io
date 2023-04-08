@@ -7,13 +7,13 @@
             body {
               background-image: url('https://public.dm.files.1drv.com/y4mhWilm2SU72iEmOaPozNAzDlUUsx0NU8CpdCuly21GeiiRj5p-PFo5fNVtFIrSacsQhvTdyP2PkFLME4hLNacLNJOfmJrcQjJbQBXBHZU-5tSfiR6u02Mn9LGUpS6TcTheMeh8t6rxLOP0qHiHNMAYHDOBHK8nfS04Up4BRYCtdHVD5iiH1hEBhkmJiBJ8_XzxuQtlgButwTHCkb3MPW2Y8lwQN9nsgisTsWHge0kCHs?encodeFailures=1&width=1849&height=872');
               background-repeat: no-repeat;
-              background-size: contain;
+              background-size: cover;
               background-attachment: fixed;
               color: white;
             }
 
             .button {
-              background-color: transparent;
+              background-color: rgba(0, 0, 128, 0.5);
               color: white;
               padding: 15px 25px;
               text-align: center;
@@ -34,11 +34,25 @@
               padding-bottom: 50vh;
               text-align: center;
             }
+
+            .scrolling-section {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 80%;
+                height: 80%;
+                overflow-y: scroll;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 25px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
         </style>
     </head>
     <body>
         <div class="background"></div>
-        <div class="middle">
+        <div class="scrolling-section">
           <div style="border: 1vh solid #00008B;background-color: #00008B;border-radius: 25px;">
           <h1 style="font-family:'trebuchet ms',sans-serif;">skyeyemx</h1>
           </div>
@@ -52,6 +66,8 @@
           <a href="https://www.reddit.com/user/skyeyemx" target="_blank"><button class="button">Reddit</button></a>
           <a href="https://www.instagram.com/skyeyemx/" target="_blank"><button class="button">Instagram</button></a>
           <a href="https://twitter.com/skyeyemx" target="_blank"><button class="button">Twitter</button></a>
+
+          <!-- Add your text here -->
         </div>
 
         <script>
