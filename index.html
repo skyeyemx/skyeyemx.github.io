@@ -46,9 +46,17 @@
           <br>feel free to check out my music!
           <br>
           <br>
-          <br>
-          <p style="font-size:65%;font-family:'trebuchet ms',sans-serif;">(i am hereby not responsible for any disappointment)</p>
-          <p style="font-family:'trebuchet ms',sans-serif;"> <a href="https://www.youtube.com/channel/UCvfQZE1zaWsyt8RXYeejZeA" class="button">Youtube</a> <a href="https://soundcloud.com/skyeye-mccix" class="button">SoundCloud</a> <a href="https://www.reddit.com/user/skyeyemx" class="button">Reddit</a> <a href="https://www.instagram.com/skyeyemx/" class="button">Instagram</a> <a href="https://twitter.com/skyeyemx" class="button">Twitter</a></p>
+          <
         </div>
+
+        <script>
+          window.addEventListener('scroll', function() {
+            const parallax = document.querySelector('.background');
+            let scrollPosition = window.pageYOffset;
+
+            parallax.style.transform = 'translateY(' + scrollPosition * 0.7 + 'px)';
+          });
+        </script>
+
     </body>
 </html>
