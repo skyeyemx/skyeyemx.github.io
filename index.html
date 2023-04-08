@@ -47,37 +47,48 @@
                 border-radius: 25px;
                 padding-top: 20px;
                 padding-bottom: 20px;
+
+                /* Hide scrollbar */
+                scrollbar-width: none; /* Firefox */
+                -ms-overflow-style:none; /* IE and Edge */
+            }
+
+            .scrolling-section::-webkit-scrollbar {
+                display:none; /* Chrome and Safari */
+            }
+
+            .icon {
+                width: 30px;
+                height: auto;
+                margin-right: 10px;
             }
         </style>
     </head>
-    <body>
-        <div class="background"></div>
-        <div class="scrolling-section">
-          <div style="border: 1vh solid #00008B;background-color: #00008B;border-radius: 25px;">
-          <h1 style="font-family:'trebuchet ms',sans-serif;">skyeyemx</h1>
-          </div>
-          <p style="font-family:'trebuchet ms',sans-serif;">heyo this is skyeyemx's work-in-progress website made with the help of Autumn R and ChatGPT.
-          <br>feel free to check out my music!
-          <br>
-          <br>
-          <
-          <a href="https://www.youtube.com/channel/UCvfQZE1zaWsyt8RXYeejZeA" target="_blank"><button class="button">YouTube</button></a>
-          <a href="https://soundcloud.com/skyeyemx" target="_blank"><button class="button">SoundCloud</button></a>
-          <a href="https://www.reddit.com/user/skyeyemx" target="_blank"><button class="button">Reddit</button></a>
-          <a href="https://www.instagram.com/skyeyemx/" target="_blank"><button class="button">Instagram</button></a>
-          <a href="https://twitter.com/skyeyemx" target="_blank"><button class="button">Twitter</button></a>
+<body>
+    <div class="background"></div>
+    <div class="scrolling-section">
+      <div style="border: 1vh solid #00008B;background-color: #00008B;border-radius: 25px;">
+      <h1 style="font-family:'trebuchet ms',sans-serif;">skyeyemx</h1>
+      </div>
+      <p style="font-family:'trebuchet ms',sans-serif;">heyo this is skyeyemx's work-in-progress website made with the help of Autumn R and ChatGPT.
+      <br>feel free to check out my music!
+      <br>
+      <br>
 
-          <!-- Add your text here -->
-        </div>
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/channel/UCvfQZE1zaWsyt8RXYeejZeA" target="_blank"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"><button class="button">YouTube</button></a>
 
-        <script>
-          window.addEventListener('scroll', function() {
-            const parallax = document.querySelector('.background');
-            let scrollPosition = window.pageYOffset;
+      <!-- SoundCloud -->
+      <a href="https://soundcloud.com/skyeyemx" target="_blank"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384062.png" alt="SoundCloud"><button class="button">SoundCloud</button></a>
 
-            parallax.style.transform = 'translateY(' + scrollPosition * 0.7 + 'px)';
-          });
-        </script>
+      <!-- Reddit -->
+      <a href="https://www.reddit.com/user/skyeyemx" target="_blank"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png" alt="Reddit"><button class="button">Reddit</button></a>
 
+      <!-- Twitter -->
+      <a href="https://twitter.com/skyeyemx" target="_blank"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"><button class="button">Twitter</button></a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/skyeyemx/" target="_blank"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"><button class="button">Instagram</button></a>
+    </div>
     </body>
 </html>
